@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container__asking{
+    border: 3px solid grey;
+    background-color: black;
+    color: white;
+    font-size: 36px;
+}
