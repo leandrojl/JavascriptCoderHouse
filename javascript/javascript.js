@@ -59,3 +59,40 @@ document.getElementById("button2").onclick = function() {
        
  
  };
+
+ document.getElementById("button5").onclick = function() {
+    let question = prompt("How many times to you want to iterate the for?");
+    let questionNumber = parseInt(question);
+
+    for(let i=1; i < questionNumber + 1; i++ ){
+        
+        alert(i);
+        
+    }
+ };
+
+ document.getElementById("button6").onclick = function() {
+    let question = parseInt(prompt("How many times to you want to iterate the for?"));
+    
+    
+
+    for(let i=1; i < question +1; i++ ){
+        
+        let numberQuestion = parseInt(prompt("Give me a number and check if it is bigger than 50!"));
+        
+        if (numberQuestion > 50 && typeof numberQuestion == 'number'){
+            alert("Your number it's bigger than 50");
+            console.log("Your number it's bigger than 5");
+        } else if(numberQuestion < 50 && typeof numberQuestion == 'number') {
+            console.log("Your input it's lower than 5");
+            alert("Your number it's lower than 50");
+        } else {
+            alert("That's not a number!");
+            
+        }
+    }
+    
+    
+
+};
+ 
