@@ -1,15 +1,15 @@
-//var person = prompt("Please enter your name");//
+document.getElementById("button1").addEventListener("click", function() {
+    var person = prompt("Please enter your name");
 
-document.getElementById("button1").onclick = function() {
-   var person = prompt("Please enter your name");
+if (person != null) {
+         document.getElementById("container__name").innerHTML =
+         "Hello " + person + "! How are you today?";
+       }
+       console.log("Hello " + person + "! How are you today?");
+ 
+ }); 
 
-    if (person != null) {
-        document.getElementById("container__name").innerHTML =
-        "Hello " + person + "! How are you today?";
-      }
-      console.log("Hello " + person + "! How are you today?");
 
-};
 
 document.getElementById("button2").onclick = function() {
     var number = prompt("Please enter your number");
@@ -95,4 +95,30 @@ document.getElementById("button2").onclick = function() {
     
 
 };
- 
+
+function askInput(){
+    let numberOne = parseInt(prompt("Enter first number:"));
+    let numberTwo = parseInt(prompt("Enter second number:"));
+    var result = (numberOne + numberTwo)/2;
+
+    return result;
+}
+function showConsole(info){
+    console.log(info);
+}
+function alertMessage(message){
+    alert(message);
+}
+
+document.getElementById("buttonNumber").onclick = function() {
+    console.log("mmm");
+    let number = askInput();
+
+
+    document.getElementById("container__averageNumbers").innerHTML = number;
+    showConsole(number);
+    alertMessage(number);
+    
+    
+
+};
