@@ -1,3 +1,44 @@
+let arrayCars = [];
+
+document.getElementById("buttonArray1").onclick = function() {
+    let question = prompt("How many cars you want to put inside the array?");
+    let questionNumber = parseInt(question);
+
+    for(let i=0; i <= questionNumber - 1 ; i++ ){
+        let usuario = prompt("Add a car");
+        arrayCars.push(usuario);
+        console.log(arrayCars[i]);
+    }
+
+    
+ };
+
+ document.getElementById("buttonArray2").onclick = function() {
+    let arrayNames= [];
+    let question1 = prompt("Length of array?")
+    do{
+        let question = prompt("Enter a name:");
+        arrayNames.push(question);
+        console.log(question);
+    } while (arrayNames.length != question1);
+    
+    console.log(arrayNames);
+    
+ };
+
+ document.getElementById("buttonArray3").onclick = function() {
+    let arrayNames= [];
+    let question1 = prompt("Length of array?")
+    do{
+        let question = prompt("Enter a name:");
+        arrayNames.push(question);
+        console.log(question);
+    } while (arrayNames.length != question1);
+    
+    console.log(arrayNames);
+    
+ };
+
 function askInput(){
     let numberOne = parseInt(prompt("Enter first number:"));
     let numberTwo = parseInt(prompt("Enter second number:"));

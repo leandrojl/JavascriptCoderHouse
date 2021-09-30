@@ -1,3 +1,4 @@
+
 document.getElementById("button1").addEventListener("click", function() {
     var person = prompt("Please enter your name");
 
