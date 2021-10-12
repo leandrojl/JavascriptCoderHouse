@@ -2,6 +2,17 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: lightgray;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-img-top{
+    
+    width:  auto;
+    height: 190px;
+    
+}
 .container__style{
     
     

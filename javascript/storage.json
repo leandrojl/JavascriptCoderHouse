@@ -1,0 +1,67 @@
+{"cars":[
+
+    {
+        "name": "Audi",
+        "color": "blue",
+        "src": "/images/audi-blue.jpeg", 
+        "model": "a8",
+        "price": 15000,
+        "id": 1
+    },
+    {
+        "name": "Mercedes Benz",
+        "color": "Blue",
+        "src": "/images/mercedes-blue.jpeg",
+        "model": "a100",
+        "price": 17000,
+        "id": 2
+    },
+    {
+        "name": "Ford",
+        "color": "Black",
+        "src": "/images/ford-gray.jpeg",
+        "model": "Fiesta",
+        "price": 5000,
+        "id": 3
+    },
+    {
+        "name": "Ford",
+        "color": "Black",
+        "src": "/images/ford-gray.jpeg",
+        "model": "Fiesta",
+        "price": 5000,
+        "id": 3
+    },
+    {
+        "name": "Ford",
+        "color": "Black",
+        "src": "/images/ford-gray.jpeg",
+        "model": "Fiesta",
+        "price": 5000,
+        "id": 3
+    },
+    {
+        "name": "Ford",
+        "color": "Black",
+        "src": "/images/ford-gray.jpeg",
+        "model": "Fiesta",
+        "price": 5000,
+        "id": 3
+    },
+    {
+        "name": "Ford",
+        "color": "Black",
+        "src": "/images/ford-gray.jpeg",
+        "model": "Fiesta",
+        "price": 5000,
+        "id": 3
+    },
+    {
+        "name": "Range Rover",
+        "color": "White",
+        "src": "/images/rover-white.jpeg",
+        "model": "4x4",
+        "price": 25000,
+        "id": 4
+    }
+]}
