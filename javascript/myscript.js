@@ -46,6 +46,14 @@ let cars =[
     },
 ]
 
+
+var jsonStringCars = JSON.stringify(cars);
+console.log(jsonStringCars);
+
+var jsonParseCars = JSON.parse(jsonStringCars);
+
+console.log(jsonParseCars);
+
 let buttonAddCars = document.getElementById("addCar");
 const shopContainer = document.getElementById("shop");
 
@@ -53,7 +61,7 @@ const addCars = () =>{
 
 buttonAddCars.style.backgroundColor = "red";
 
-for (let car of cars){
+for (let car of jsonParseCars){
     let container = document.createElement("div");
     container.className= "col-md-3 col-xs-12 mt-3";
     container.innerHTML = 
@@ -71,3 +79,33 @@ for (let car of cars){
 }}
 buttonAddCars.addEventListener("click", addCars);
 buttonAddCars.addEventListener("mousedown", function(){buttonAddCars.style.backgroundColor = "blue";})
+
+
+let buttonRemoveCars = document.getElementById("removeCars");
+
+const removeCars = () =>{
+/*shopContainer.removeChild(shopContainer.childNodes);*/
+shopContainer.textContent = '';
+}
+
+buttonRemoveCars.addEventListener("click", removeCars);
+
+let buttonTermsAndConditions = document.getElementById("buttonTerms&Conditions");
+
+
+
+const acceptance = () =>{
+
+    const acceptTermsAndConditions = JSON.parse(localStorage.getItem("termsAndConditions"));
+
+if(acceptTermsAndConditions === null || acceptTermsAndConditions === false || acceptTermsAndConditions === true){
+    let askIfAcceptance = prompt("Do you accept Terms and Conditions? Answer 'yes' or 'no'");
+    if(askIfAcceptance === "yes"){
+        localStorage.setItem("termsAndConditions", true);
+    }else if (askIfAcceptance === "no"){
+        localStorage.setItem("termsAndConditions", false);
+    }; 
+} 
+}
+
+buttonTermsAndConditions.addEventListener("click", acceptance);
