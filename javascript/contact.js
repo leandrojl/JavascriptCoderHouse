@@ -9,6 +9,7 @@ console.log(payload.email);
 console.log(answer);
 console.log(status);
 if(status === "success") alert (`Hey! Your Email: ${answer.email} has been succesfully saved`);
+$("#formNewsLetter")[0].reset();
 }) 
 })
 
@@ -24,6 +25,7 @@ $("#formContact").on("submit", (e) =>{
     
     console.log(answer);
     console.log(status);
-    if(status === "success") alert (`Thanks!`);
+    if(status === "success") alert (`Thanks! ${answer.name} ${answer.lastName}!`);
+    $("#formContact")[0].reset();
     }); 
     });

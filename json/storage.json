@@ -1,4 +1,4 @@
-{"cars":[
+[
 
     {
         "name": "Audi",
@@ -24,38 +24,7 @@
         "price": 5000,
         "id": 3
     },
-    {
-        "name": "Ford",
-        "color": "Black",
-        "src": "/images/ford-gray.jpeg",
-        "model": "Fiesta",
-        "price": 5000,
-        "id": 3
-    },
-    {
-        "name": "Ford",
-        "color": "Black",
-        "src": "/images/ford-gray.jpeg",
-        "model": "Fiesta",
-        "price": 5000,
-        "id": 3
-    },
-    {
-        "name": "Ford",
-        "color": "Black",
-        "src": "/images/ford-gray.jpeg",
-        "model": "Fiesta",
-        "price": 5000,
-        "id": 3
-    },
-    {
-        "name": "Ford",
-        "color": "Black",
-        "src": "/images/ford-gray.jpeg",
-        "model": "Fiesta",
-        "price": 5000,
-        "id": 3
-    },
+    
     {
         "name": "Range Rover",
         "color": "White",
@@ -64,4 +33,4 @@
         "price": 25000,
         "id": 4
     }
-]}
+]

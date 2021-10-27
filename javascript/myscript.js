@@ -1,61 +1,41 @@
-jQuery(function(){console.log("DOM ready")
-/* $(document).ready(function(){console.log("DOM ready")}); */
 
-/*let precioElementos = document.getElementsByClassName("precio");
-
-for (precio of precioElementos){
-    let prefijo = document.createElement("span");
-
-    prefijo.innerHTML = "US$";
-
-    precio.prepend(prefijo);
-
-}*/
-
-
-let cars =[
-
-    {
-        name: "AUDI",
-        color: "blue",
-        src: "/images/audi-blue.jpeg", 
-        model: "a8",
-        price: 15000,
-        id: 1
-    },
-    {
-        name: "MERCEDES BENZ",
-        color: "Blue",
-        src: "/images/mercedes-blue.jpeg",
-        model: "a100",
-        price: 17000,
-        id: 2
-    },
-    {
-        name: "FORD",
-        color: "Black",
-        src: "/images/ford-gray.jpeg",
-        model: "Fiesta",
-        price: 5000,
-        id: 3
-    },
-    {
-        name: "RANGE ROVER",
-        color: "White",
-        src: "/images/rover-white.jpeg",
-        model: "4x4",
-        price: 25000,
-        id: 4
-    },
-]
-
-
-var jsonStringCars = JSON.stringify(cars);
+/*var jsonStringCars = JSON.stringify(cars);
 // console.log(jsonStringCars);
 
-var jsonParseCars = JSON.parse(jsonStringCars);
+var jsonParseCars = JSON.parse(jsonStringCars);*/
 
 // console.log(jsonParseCars);
+
+jQuery(function(){console.log("DOM ready")
+
+const URL_API = "https://api.mercadolibre.com/sites/MLA/search?q=autos#json";
+
+function bringApi(){
+    $.get(URL_API, (answer, status)=>{
+        console.log(answer.results[1]);
+        console.log(status);
+        
+        if(status === "success"){
+            $("#shop").append(` <div class="col-md-3 col-xs-12">
+                                <div class="card bg-info m-1">
+                                <img src="${answer.results[1].thumbnail}" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3 font-weight-bold">${answer.results[1].title}</h5>
+                                    <p class="card-text">COLOR: ${car.color}</p>
+                                    <p class="card-text">MODEL: ${car.model}</p>
+                                    <p class="precio">PRICE: US$${car.price}</p>
+                                    <a href="#" class="btn btn-danger">BUY</a>
+                                </div>
+                                </div>
+                                </div>`);
+        }
+    });
+
+}
+$("#callApi").on("click", bringApi);
+
+const URL = "../json/storage.json";
+
 
 $("#mainTitle").html("CAR SHOP");
 
@@ -63,39 +43,25 @@ let buttonAddCars = $("#addCar")[0];
 const shopContainer = $("#shop")[0]; /*document.getElementById("shop");*/
 
 const addCars = () =>{
-
-
-
-for (let car of jsonParseCars){
-
-$("#shop").append(` <div class="col-md-3 col-xs-12 mt-3">
-                    <div class="card bg-info" style="width: 18rem;">
-                    <img src="${car.src}" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-3 font-weight-bold">${car.name}</h5>
-                        <p class="card-text">COLOR: ${car.color}</p>
-                        <p class="card-text">MODEL: ${car.model}</p>
-                        <p class="precio">PRICE: US$${car.price}</p>
-                        <a href="#" class="btn btn-danger">BUY</a>
-                    </div>
-                    </div>
-                    </div>`);
-
-   /* let container = document.createElement("div");
-    container.className= "col-md-3 col-xs-12 mt-3";
-    container.innerHTML = 
-    `<div class="card" style="width: 18rem;">
-        <img src="${car.src}" class="card-img-top" alt="...">
-      <div class="card-body text-center">
-            <h5 class="card-title mb-3 font-weight-bold">${car.name}</h5>
-            <p class="card-text">COLOR: ${car.color}</p>
-            <p class="card-text">MODEL: ${car.model}</p>
-            <p class="precio">PRICE: US$${car.price}</p>
-            <a href="#" class="btn btn-primary">BUY</a>
-      </div>
-    </div>`
-    shopContainer.appendChild(container);*/
-}}
+$.get(URL, (answer, status) =>{
+    console.log(answer);
+    console.log(status);
+    let cars = answer;
+    if (status === "success"){
+        for (let car of cars){
+            
+            $("#shop").append(` <div class="col-md-3 col-xs-12">
+                                <div class="card bg-info m-1">
+                                <img src="${car.src}" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3 font-weight-bold">${car.name}</h5>
+                                    <p class="card-text">COLOR: ${car.color}</p>
+                                    <p class="card-text">MODEL: ${car.model}</p>
+                                    <p class="precio">PRICE: US$${car.price}</p>
+                                    <a href="#" class="btn btn-danger">BUY</a>
+                                </div>
+                                </div>
+                                </div>`);}}})}
 
 $("#addCar").on("click", addCars);
 /*buttonAddCars.addEventListener("click", addCars);*/
