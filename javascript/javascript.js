@@ -1,3 +1,12 @@
+$("#buttonHide").on("click", function (){
+$("#buttonHide").hide();
+})
+
+$("#buttonShow").on("click", function (){
+    $("#buttonHide").show();
+    })
+
+
 let arrayCars = [];
 
 document.getElementById("buttonArray1").onclick = function() {
@@ -10,7 +19,6 @@ document.getElementById("buttonArray1").onclick = function() {
         console.log(arrayCars[i]);
     }
 
-    
  };
 
  document.getElementById("buttonArray2").onclick = function() {
@@ -26,19 +34,6 @@ document.getElementById("buttonArray1").onclick = function() {
     
  };
 
-/* document.getElementById("buttonArray3").onclick = function() {
-    let arrayNames= [];
-    let question1 = prompt("Length of array?")
-    do{
-        let question = prompt("Enter a name:");
-        arrayNames.push(question);
-        console.log(question);
-    } while (arrayNames.length != question1);
-    
-    console.log(arrayNames);
-    
- };*/
-
 function askInput(){
     let numberOne = parseInt(prompt("Enter first number:"));
     let numberTwo = parseInt(prompt("Enter second number:"));
@@ -52,9 +47,7 @@ function showConsole(info){
 function alertMessage(message){
     alert(message);
 }
-// const alertMessage = (message) =>{
-// alert(message);
-//}
+
 document.getElementById("buttonNumber").onclick = function() {
     
     let number = askInput();
@@ -90,14 +83,6 @@ function car(type, color, model){
 const CAR_TWO = new car("Renault","Red", "Clio");
 const CAR_THREE = new car("Chevrolet","Black", "Onyx");
 
-// let propertyCar = prompt("Enter property you would like to know;");
-// alert(CAR_ONE[propertyCar]);
-
-// let askCar_Color= prompt("color"); let askCar_type= prompt("type"); let askCar_model= prompt("type");
-
-// for (const propiedad in CAR_ONE){
-// console.log(CAR_ONE[propiedad])   
-// }
 document.getElementById("buttonStartEngine1").onclick = function() {
     CAR_ONE.startEngine();
     
