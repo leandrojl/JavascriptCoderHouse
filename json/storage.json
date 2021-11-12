@@ -2,7 +2,7 @@
 
     {
         "name": "Audi",
-        "color": "blue",
+        "color": "Blue",
         "src": "/images/audi-blue.jpeg", 
         "model": "a8",
         "price": 15000,
@@ -32,5 +32,69 @@
         "model": "4x4",
         "price": 25000,
         "id": 4
+    },
+    {
+        "name": "Audi",
+        "color": "Black",
+        "src": "/images/audi-camioneta.webp",
+        "model": "4x4",
+        "price": 25000,
+        "id": 5
+    },
+    {
+        "name": "Porsche",
+        "color": "Gray",
+        "src": "/images/porsche1.jpeg",
+        "model": "Sport",
+        "price": 45000,
+        "id": 6
+    },
+    {
+        "name": "Mercedes Benz",
+        "color": "White",
+        "src": "/images/mercedes-sport.webp",
+        "model": "Sport",
+        "price": 35000,
+        "id": 7
+    },
+    {
+        "name": "Volkswagen",
+        "color": "Blue",
+        "src": "/images/bettleVW.webp",
+        "model": "Beetle",
+        "price": 9000,
+        "id": 8
+    },
+    {
+        "name": "Porsche",
+        "color": "Red",
+        "src": "/images/porsche2.jpg",
+        "model": "Sport",
+        "price": 19000,
+        "id": 9
+    },
+    {
+        "name": "Volkswagen",
+        "color": "White",
+        "src": "/images/vwgol1.jpg",
+        "model": "GOL",
+        "price": 4200,
+        "id": 10
+    },
+    {
+        "name": "Porsche",
+        "color": "Black",
+        "src": "/images/porsche4x4.jpg",
+        "model": "4x4",
+        "price": 27000,
+        "id": 11
+    },
+    {
+        "name": "BMW",
+        "color": "Black",
+        "src": "/images/bmwsport.jpg",
+        "model": "4x4",
+        "price": 50000,
+        "id": 12
     }
 ]
