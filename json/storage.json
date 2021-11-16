@@ -4,24 +4,24 @@
         "name": "Audi",
         "color": "Blue",
         "src": "/images/audi-blue.jpeg", 
-        "model": "a8",
-        "price": 15000,
+        "model": "A8",
+        "price": "15000.00",
         "id": 1
     },
     {
         "name": "Mercedes Benz",
         "color": "Blue",
         "src": "/images/mercedes-blue.jpeg",
-        "model": "a100",
-        "price": 17000,
+        "model": "A100",
+        "price": "17000.00",
         "id": 2
     },
     {
         "name": "Ford",
         "color": "Black",
         "src": "/images/ford-gray.jpeg",
-        "model": "Fiesta",
-        "price": 5000,
+        "model": "FIESTA",
+        "price": "5000.00",
         "id": 3
     },
     
@@ -30,7 +30,7 @@
         "color": "White",
         "src": "/images/rover-white.jpeg",
         "model": "4x4",
-        "price": 25000,
+        "price": "25000.00",
         "id": 4
     },
     {
@@ -38,7 +38,7 @@
         "color": "Black",
         "src": "/images/audi-camioneta.webp",
         "model": "4x4",
-        "price": 25000,
+        "price": "25000.00",
         "id": 5
     },
     {
@@ -46,7 +46,7 @@
         "color": "Gray",
         "src": "/images/porsche1.jpeg",
         "model": "Sport",
-        "price": 45000,
+        "price": "45000.00",
         "id": 6
     },
     {
@@ -54,7 +54,7 @@
         "color": "White",
         "src": "/images/mercedes-sport.webp",
         "model": "Sport",
-        "price": 35000,
+        "price": "35000.00",
         "id": 7
     },
     {
@@ -62,7 +62,7 @@
         "color": "Blue",
         "src": "/images/bettleVW.webp",
         "model": "Beetle",
-        "price": 9000,
+        "price": "9000.00",
         "id": 8
     },
     {
@@ -70,7 +70,7 @@
         "color": "Red",
         "src": "/images/porsche2.jpg",
         "model": "Sport",
-        "price": 19000,
+        "price": "19000.00",
         "id": 9
     },
     {
@@ -78,7 +78,7 @@
         "color": "White",
         "src": "/images/vwgol1.jpg",
         "model": "GOL",
-        "price": 4200,
+        "price": "4200.00",
         "id": 10
     },
     {
@@ -86,15 +86,15 @@
         "color": "Black",
         "src": "/images/porsche4x4.jpg",
         "model": "4x4",
-        "price": 27000,
+        "price": "27000.00",
         "id": 11
     },
     {
         "name": "BMW",
         "color": "Black",
         "src": "/images/bmwsport.jpg",
-        "model": "4x4",
-        "price": 50000,
+        "model": "Sport",
+        "price": "50000.00",
         "id": 12
     }
 ]

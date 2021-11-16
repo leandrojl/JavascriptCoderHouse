@@ -1,3 +1,5 @@
+$("#mainTitle3").html("CONTACT");
+
 const URL_POST = "https://jsonplaceholder.typicode.com/posts";
 
 $("#formNewsLetter").on("submit", (e) =>{

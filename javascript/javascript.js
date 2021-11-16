@@ -1,3 +1,4 @@
+$("#mainTitle1").html("JAVASCRIPT BUTTONS");
 $("#buttonHide").on("click", function (){
 $("#buttonHide").hide();
 })
